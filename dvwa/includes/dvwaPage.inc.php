@@ -31,10 +31,7 @@ if( !isset( $_COOKIE[ 'security' ] ) || !in_array( $_COOKIE[ 'security' ], $secu
 		dvwaSecurityLevelSet( 'impossible' );
 	}
 
-	if( $_DVWA[ 'default_phpids_level' ] == 'enabled' )
-		dvwaPhpIdsEnabledSet( true );
-	else
-		dvwaPhpIdsEnabledSet( false );
+	dvwaPhpIdsEnabledSet( false );
 }
 
 // DVWA version
